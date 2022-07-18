@@ -1,0 +1,39 @@
+bat 파일들은 윈도우전용임.
+mac은 shell 파일을 직접만들어야할듯?
+
+create_scheduler.bat => 자동 스케줄러 등록 프로그램
+config.properties 파일옵션
+
+각종 옵션
+
+name=이름            (일일업무보고기준 정영석:13)
+id=gw아이디                    (암호화 옵션 true 일시 암호화 id)
+isTest=true/false               (테스트 모드 validate 무시 및 실제 등록X)
+encrypt=true/false             (암복화 지원여부)
+password=gw비번             (암호화 옵션 true 일시 암호화 pw)
+visible=true/false               (동작을 눈으로 볼지 말지 default:false)
+willStartFile=true/false        (출근프로그램 시작시 파일실행여부)
+filePaths=willStartFile이 true 일시 필수입력   (구분자 :  , )
+willShutdown=true/false     (퇴근프로그램 컴퓨터 종료여부)
+
+ex filePaths)C:/Program Files (x86)/douzone/Amaranth10 Messenger/DZLauncher.exe,C:/Users/youngseok/AppData/Local/Programs/Microsoft VS Code/Code.exe,C:/eclipse/eclipse.exe,C:/Users/youngseok/AppData/Local/DBeaver/dbeaver.exe
+
+본인의 id ,pw 암복호화 하는법
+encrypt = true 를 주고 암호화를 하지않은 id pw 를 입력 후 프로그램
+실행하면 result 파일에 암호화 된 id pw 가 적혀있음
+해당 내용을 id pw 에 적으면 됨
+
+#id=mana129
+id=                    #encrypt true 값으로 사용하고 프로그램을 실행하면 result.txt파일에 본인의 암호화된 id pw 값이 나옴
+#password=gw패스워드입력
+password=
+name=정영석                                     #본인의 이름 일일업무보고에 사용
+visible=true
+isTest=true                                     #테스트 옵션 실행되는 화면을 볼수 있습니다.
+encrypt=true                                    #id, pw 암호화 지원여부
+willShutdown=true                               #퇴근 프로세스시 컴퓨터 종료여부
+willStartFile=false                             #출근 프로세스시 파일 실행 여부
+filePaths=C:/eclipse/eclipse.exe,C:/Users/youngseok/AppData/Local/DBeaver/dbeaver.exe, #실행시킬 파일경로
+#C:/Program Files (x86)/douzone/Amaranth10 Messenger/DZLauncher.exe
+#,C:/Users/youngseok/AppData/Local/Programs/Microsoft VS Code/Code.exe,C:/eclipse/eclipse.exe,C:/Users/youngseok/AppData/Local/DBeaver/dbeaver.exe
+#C:/Users/youngseok/AppData/Local/Programs/Microsoft VS Code/Code.exe,C:/Users/youngseok/AppData/Local/Programs/Microsoft VS Code/Code.exe
