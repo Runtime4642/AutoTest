@@ -6,6 +6,11 @@ config.properties 파일옵션
 
 각종 옵션
 
+DPLCenterId=
+DPLCenterPassword=
+DPLCenterBatchTime=
+visibleDPL=
+
 name=이름            (일일업무보고기준 정영석:13)
 id=gw아이디                    (암호화 옵션 true 일시 암호화 id)
 isTest=true/false               (테스트 모드 validate 무시 및 실제 등록X)
@@ -15,7 +20,6 @@ visible=true/false               (동작을 눈으로 볼지 말지 default:fals
 willStartFile=true/false        (출근프로그램 시작시 파일실행여부)
 filePaths=willStartFile이 true 일시 필수입력   (구분자 :  , )
 willShutdown=true/false     (퇴근프로그램 컴퓨터 종료여부)
-
 ex filePaths)C:/Program Files (x86)/douzone/Amaranth10 Messenger/DZLauncher.exe,C:/Users/youngseok/AppData/Local/Programs/Microsoft VS Code/Code.exe,C:/eclipse/eclipse.exe,C:/Users/youngseok/AppData/Local/DBeaver/dbeaver.exe
 
 본인의 id ,pw 암복호화 하는법
