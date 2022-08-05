@@ -37,7 +37,9 @@ isTest=true                                     #테스트 옵션 실행되는 �
 encrypt=true                                    #id, pw 암호화 지원여부
 willShutdown=true                               #퇴근 프로세스시 컴퓨터 종료여부
 willStartFile=false                             #출근 프로세스시 파일 실행 여부
-filePaths=C:/eclipse/eclipse.exe,C:/Users/youngseok/AppData/Local/DBeaver/dbeaver.exe, #실행시킬 파일경로
+filePaths=C:/Program Files (x86)/douzone/Amaranth10 Messenger/DZLauncher.exe, #실행시킬 파일경로
 #C:/Program Files (x86)/douzone/Amaranth10 Messenger/DZLauncher.exe
 #,C:/Users/youngseok/AppData/Local/Programs/Microsoft VS Code/Code.exe,C:/eclipse/eclipse.exe,C:/Users/youngseok/AppData/Local/DBeaver/dbeaver.exe
 #C:/Users/youngseok/AppData/Local/Programs/Microsoft VS Code/Code.exe,C:/Users/youngseok/AppData/Local/Programs/Microsoft VS Code/Code.exe
+#willAmaranthMessengerClose=true
+#randomOutTime=true
