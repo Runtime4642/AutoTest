@@ -6,6 +6,12 @@ config.properties 파일옵션
 
 각종 옵션
 
+inTime=0700
+outTime=1800
+outTime2=2000
+isRandomOutTime=true
+registTime=1655
+
 DPLCenterId=
 DPLCenterPassword=
 DPLCenterBatchTime=
